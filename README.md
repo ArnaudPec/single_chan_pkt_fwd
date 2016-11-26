@@ -73,6 +73,25 @@ NSS | GPIO6 | #22 | Chip enable for SX1272 | Pi => SX1272
 DIO0 | GPIO7 | #7 | signals an available packet | SX1272 => Pi
 RST | GPIO0 | #11 | Chip reset for SX1272 | Pi => SX1272
 
+Building packages for Debian Distributions
+------------------------------------------
+
+If you are running a debian distribution such as raspbian on
+your pi, you can now create a debian package to install on
+multiple devices by running the following commands:
+
+```bash
+sudo apt-get install devscripts build-essential lintian
+debuild
+cd ..
+sudo dpkg -i lorawan-single-packet-gateway*.deb
+```
+
+NOTE: You will need a GPG key installed on the pi you are
+building from, and you must build on a device with the same
+architecture as that to which you will deploy.
+
+
 Configuration
 -------------
 
