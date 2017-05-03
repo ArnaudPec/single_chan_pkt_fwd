@@ -93,14 +93,14 @@ sf_t sf = SF7;
 uint32_t  freq = 868100000; // in Mhz! (868.1)
 
 // Set location
-float lat=51.572101;
-float lon=4.797998;
-int   alt=2;
+float lat = 43.61150;
+float lon = 1.43590;
+int   alt = 162;
 
 /* Informal status fields */
-static char platform[24]    = "Single Channel Gateway";  /* platform definition */
-static char email[40]       = "";                        /* used for contact email */
-static char description[64] = "Singe Channel Gateway [v0.1]";  /* used for free form description */
+static char platform[24]    = "Single Channel Gateway"; // platform definition
+static char email[40]       = "";                       // used for contact email
+static char description[64] = "Singe Channel Gateway";  // used for free form description
 
 // define servers
 // TODO: use host names and dns
